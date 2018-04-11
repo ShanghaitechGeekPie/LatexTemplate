@@ -1,0 +1,185 @@
+%% This is a draft version of LaTeX template for
+%% ShanghaiTech Bachelor Thesis
+
+%% Structure is not well-organized
+
+\documentclass[sansserif,12pt]{style/ShanghaiTech-bachelor-thesis}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[font=small,labelfont=bf,labelsep=none]{caption}
+
+\metaBlankLen{275pt}
+\title{A Brilliant Work}
+\titleZh{不错的毕设论文}
+\studentNameZh{假名字}
+\studentNameEn{Fake Name}
+\studentId{12345678}
+\yearOfAttendance{2014}
+\advisorNameZh{张三 教授}
+\advisorNameEn{Prof. Foo Bar}
+\departmentNameZh{信息科学与技术学院}
+\departmentNameEn{School of Information Science and Technology}
+\majorNameZh{电子信息工程}
+\majorNameEn{Electrical and Electronic Engineering}
+
+
+%%%%%%%%%%%%%%%%%%%%%%  begin %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%   Cover  %%%%%%%%%%%%%
+
+\begin{titlepage}
+\makezhtitle
+\maketitle
+\makesisttitle
+\end{titlepage}
+
+%%%%%%%%%%%%%%%   Abstract  %%%%%%%%%%%%%
+\input{component/abstract-zh}
+\vfill
+\pagebreak
+\input{component/abstract-en}
+\vfill
+\pagebreak
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%  chapter1  %%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1}
+\renewcommand{\thepage}{\arabic{page}}
+
+\chapter{The First Chapter of My Thesis}
+
+\section{Sample Section}
+
+Davidson witting and grammatic. Hoofmark and Avogadro~\cite{Zeilinger2014pnp} ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic? Glory characteristic. Denature? Pigeonhole
+sportsman grin historic stockpile. Doctrinaire marginalia and art~\cite{Riverso2013Plug}.
+Sony tomography. Aviv censor seventh, conjugal. Faceplate emittance
+borough airline. Salutary. Frequent seclusion~\cite{Latafat18} Thoreau touch; known
+ashy Bujumbura may assess, hadn't servitor. Wash, Doff, Algorithm.
+
+\begin{quote}
+Ugh servant Eulerian knowledge Prexy Lyman zig wiggly.  Promenade
+adduce.  Yugoslavia piccolo Exeter.  Grata entrench sandpiper
+collocation; seamen northward virgin and baboon Stokes, hermetic
+culinary cufflink Dailey transferee curlicue.  Camille, Whittaker
+harness shatter.  Novosibirsk and Wolfe bathrobe pout Fibonacci,
+baldpate silane nirvana; lithograph robotics.  Krakow, downpour
+effeminate Volstead?
+\end{quote}
+
+Aviv censor seventh, conjugal.  Faceplate emittance
+borough airline.  Salutary.  Frequent seclusion Thoreau touch; known
+ashy Bujumbura may assess hadn't servitor.  Wash, Doff, and Algorithm.
+
+\begin{Theorem}[$LDL^T$ Factorization \cite{Zeilinger2014pnp}]\label{thm:bigthm}
+\tolerance=10000\hbadness=10000
+Aviv censor seventh, conjugal.  Faceplate emittance borough airline.
+\end{Theorem}
+
+\begin{Proof}
+Faceplate emittance borough airline.  
+Salutary.
+\end{Proof}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+1-2-3 & yes & no \\
+\hline
+Multiplan & yes & yes \\
+\hline
+Wordstar & no & no \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Pigeonhole sportsman grin historic stockpile.}
+\end{table}
+
+Davidson witting and grammatic.  Hoofmark and Avogadro ionosphere.
+Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?  Glory characteristic.  Denature?  Pigeonhole
+sportsman grin historic stockpile. Doctrinaire marginalia and art.
+Sony tomography.
+
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|ccccc|}
+\hline
+\textbf{Mitre} & \textbf{Enchantress} & \textbf{Hagstrom} &
+\textbf{Atlantica} & \textbf{Martinez} \\
+\hline
+Arabic & Spicebush & Sapient & Chaos & Conquer \\
+Jail & Syndic & Prevent & Ballerina & Canker \\
+Discovery & Fame & Prognosticate & Corroborate & Bartend \\
+Marquis & Regal & Accusation & Dichotomy & Soprano \\ 
+Indestructible  & Porterhouse & Sofia & Cavalier & Trance \\
+Leavenworth & Hidden & Benedictine & Vivacious & Utensil \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Utensil wallaby Juno titanium.}
+\end{table}
+
+
+\begin{itemize}
+\item Diesel aboard Donaldson affectionate cod?
+Vermiculite pemmican labour Greenberg derriere Hindu.  Stickle ferrule
+savage jugging spidery and animism.
+\item Hoofmark and Avogadro ionosphere.  
+\item Placental bravado catalytic especial detonate buckthorn Suzanne
+plastron isentropic?
+\end{itemize}
+
+Gillespie, Birmingham Bentley.  Hedgehog, swollen McGuire; gnat.
+Insane Cadillac inborn grandchildren Edmondson branch coauthor
+swingable?  Lap Kenney Gainesville infiltrate.  Leap and dump?
+Spoilage bluegrass.  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%  chapter2  %%%%%%%%%%%%%%%%%%%%%%%
+\chapter{This is the second chapter of my thesis}
+
+
+
+% h 此处（here）；t 页顶（top）；b 页底（bottom）；p 独立一页（page）
+The model for picture is 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\columnwidth]{2.png}
+\caption{}
+\label{fig:latex}
+\end{figure}
+
+The model for table is 
+\begin{table}[htbp] 
+ \centering
+  \caption{} 
+   \begin{tabular}{lcl} 
+  	\toprule 
+  		。。   & 。 。   & 。。 \\ 
+ 	\midrule 
+ 		。。   & 。 。   & 。。 \\ 
+ 		。。   & 。 。   & 。。 \\ 
+ 		。。   & 。 。   & 。。 \\ 
+  	\bottomrule 
+   \end{tabular} 
+\end{table}
+
+
+
+% last page
+
+\input{component/bibliography.tex}
+\input{component/acknowledgement.tex}
+
+\end{document}
+
+
+
